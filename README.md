@@ -15,6 +15,7 @@ Budget multiplayer wordle
 - `server.js` - Main websocket server
 - `game-logic.js` - Validation logic (needs word lists)
 - `room-manager.js` - Multiplayer room handling
+- `allowed_guesses.txt` + `words.txt` - Allows for guesses such as "Adieu" to be made, and not letting words like "phpht" be the solution
 
 ### Frontend Files:
 - `src/App.jsx` - Main application component
@@ -23,14 +24,3 @@ Budget multiplayer wordle
 - `src/hooks/` - React hooks for state management
 - `src/utils/stats.js` - Statistics tracking
 - `src/styles/` - Styling
-
-## Word Lists Required
-
-You need to add two arrays to `backend/game-logic.js`:
-
-1. **Possible Words**  - Words that can be the answer
-2. **Allowed Guesses** - All valid guesses including uncommon words
-
-Allows for guesses such as "Adieu" to be made, and not letting words like "phpht" be the solution
-
-Replace the placeholder arrays in the `loadWordLists()` method
